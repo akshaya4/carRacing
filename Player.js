@@ -2,20 +2,20 @@ class Player{
     constructor(){
     }
     getCount(){
-        var dateBaseRef = dataBase.ref("playerCount");
-        dateBaseRef.on("value", function(data){
-            dateBaseRef = data.val();
+        var datebaseRef = database.ref("playerCount");
+        datebaseRef.on("value", function(data){
+            datebaseRef = data.val();
         })
     }
     updateCount(Count){
-        dataBase.ref("/").update({
+        database.ref("/").update({
             playerCount : Count
         })
     }
     update(name){
         var playerIndex = "player" + playerCount
-        dataBase.ref(playerIndex).set({
-            name : name
+        database.ref(playerIndex).set({
+            userName : userName
         })
     }
 }
