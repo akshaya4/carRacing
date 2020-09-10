@@ -1,5 +1,5 @@
 var gameState = 0;
-var playerCount,dataBase,form,player,game;
+var playerCount,database,form,player,game;
 
 function setup(){
     canvas = createCanvas(400,400);
