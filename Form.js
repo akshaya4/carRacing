@@ -15,7 +15,7 @@ class Form{
             button.hide();
             var userName = input.value();
             playerCount += 1;
-            player.update(form);
+            player.update(userName);
             player.updateCount(playerCount);
             greeting.html("Hello" + userName);
             greeting.position(530,160);
